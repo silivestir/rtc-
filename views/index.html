@@ -52,10 +52,10 @@
 
 import { io } from "https://cdn.socket.io/4.4.1/socket.io.esm.min.js";
 
-const socket = io('http://localhost:3000', {
+const socket = io('https://videoboom.onrender.com', {
     transports: ['websocket', 'polling', 'flashsocket'],
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://videoboom.onrender.com",
         credentials: true
     },
     withCredentials: true
